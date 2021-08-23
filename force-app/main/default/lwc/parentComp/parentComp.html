@@ -1,0 +1,17 @@
+<template>
+    //<lightning-card title="Child to Parent" icon-name="custom:custom11">
+        //<lightning-progress-bar> Here is the progress</lightning-progress-bar>
+        //<c-child-comp> </c-child-comp>
+    //<lightning-card>
+    <lightning-card title="Child to Child">
+        <p class="slds-p-horizontal_small">
+          <lightning-progress-bar
+            value={progressValue}
+            size="large"
+          ></lightning-progress-bar>
+          <c-child-comp
+            onprogressvaluechange={hanldeProgressValueChange}
+          ></c-child-comp>
+        </p>
+      </lightning-card>
+    </template>

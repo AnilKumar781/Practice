@@ -1,0 +1,14 @@
+<template>
+    
+    <lightning-card title="Wire decorator" icon-name="custom:custom5">
+        <template for:each={contact.data} for:item="row" >
+            <lightning-layout vertical-align="center" key={row.Id}>
+                <li>
+                    {row.Id}
+                    {row.Name}
+                </li>
+            </lightning-layout>
+
+         </template>
+    </lightning-card>
+    </template>
