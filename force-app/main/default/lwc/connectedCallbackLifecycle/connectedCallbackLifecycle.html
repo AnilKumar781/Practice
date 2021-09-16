@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="List of Contacts from Account" icon-name="custom:custom44">
+        <div class="slds-m-around_medium">
+            <template for:each={contacts} for:item="contact">
+                    <p key={contact.Id}>{contact.LastName}</p>
+            </template>
+
+        </div>
+    </lightning-card>
+    
+</template>

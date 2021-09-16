@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Accout 2 contact New " icon-name="custom:custom24">
+        <lightning-input type="text" label="Enter FirstName" value={FirstName} name ="fn" onchange={changeNameHandler}></lightning-input>
+        <lightning-input type="text" label="Enter LastName" value={LastName} name ="ln" onchange={changeNameHandler}></lightning-input>
+        <lightning-input type="text" label="Enter Email" value={Email} name ="em" onchange={changeNameHandler}></lightning-input>
+
+        <lightning-button class="slds-m-top_small" 
+        variant="brand" 
+        type="submit" 
+        label="Create contact" 
+        onclick={insertContactAction}>
+    </lightning-button>
+    </lightning-card>
+</template>

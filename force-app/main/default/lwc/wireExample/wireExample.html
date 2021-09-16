@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Wire Example" icon-name="custom:custom44">
+        <div class="slds-var-p-around_medium">
+            <template if:true={userdetails}>
+                <div> Email: {userdetails.Email.value} </div>
+                <div> UserDetails: {userdetails.Name.value}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

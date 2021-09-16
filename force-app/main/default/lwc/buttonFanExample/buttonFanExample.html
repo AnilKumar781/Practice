@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Button Fan Example" icon-name="custom:custom55">
+        <lightning-button variant="brand" label="Click Here" onclick={showHandler}>FAN</lightning-button>
+        <P> FAN</P>
+        <template if:true={fan} >
+            <h3> Here Fan is running</h3>
+        </template>
+    </lightning-card>
+    
+    <lightning-card title="ToggleButton Fan Example" icon-name="custom:custom51">
+        <lightning-button variant="success" label="Click to Fan ON/OFF" onclick={toggleHandler}>FAN</lightning-button>
+        <P> FAN</P>
+        <template if:true={togglefan} >
+            <h3> Fan is ON/OFF on click</h3>
+        </template> 
+        
+        
+    </lightning-card>
+</template>
